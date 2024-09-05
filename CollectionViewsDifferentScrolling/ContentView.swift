@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let imagesForSV = DisplayedImage.createArrayOfImages()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(.horizontal) {
+            LazyHStack(spacing: 10.0){
+                ForEach(imagesForSV) { image in
+                   CellForHorizontalStack(imageForCell: image)
+                }
+            }
         }
-        .padding()
     }
 }
 
