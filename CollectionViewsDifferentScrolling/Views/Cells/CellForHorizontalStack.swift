@@ -14,8 +14,19 @@ struct CellForHorizontalStack: View {
        Image(imageForCell.imageName)
             .resizable()
             .cornerRadius(25.0)
-            .frame(maxWidth: 350.0, maxHeight: 350.0)
+            .shadow(radius: 10.0)
             .scaledToFit()
+          
+        
+            .overlay(alignment: .bottomTrailing, content:{
+                Text(imageForCell.name)
+                    .foregroundColor(.white)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding()
+
+            }
+        )
         
     }
 }

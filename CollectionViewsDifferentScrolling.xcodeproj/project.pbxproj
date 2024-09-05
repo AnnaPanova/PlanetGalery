@@ -13,6 +13,7 @@
 		4351D9492C887A3100981174 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4351D9482C887A3100981174 /* Preview Assets.xcassets */; };
 		4351D9512C887ADB00981174 /* DisplayedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351D9502C887ADB00981174 /* DisplayedImage.swift */; };
 		4351D9552C89D06600981174 /* CellForHorizontalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351D9542C89D06600981174 /* CellForHorizontalStack.swift */; };
+		4351D9572C8A2BCC00981174 /* CellDescriptionAndImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351D9562C8A2BCC00981174 /* CellDescriptionAndImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4351D9482C887A3100981174 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4351D9502C887ADB00981174 /* DisplayedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayedImage.swift; sourceTree = "<group>"; };
 		4351D9542C89D06600981174 /* CellForHorizontalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForHorizontalStack.swift; sourceTree = "<group>"; };
+		4351D9562C8A2BCC00981174 /* CellDescriptionAndImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDescriptionAndImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				4351D9542C89D06600981174 /* CellForHorizontalStack.swift */,
+				4351D9562C8A2BCC00981174 /* CellDescriptionAndImage.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4351D9512C887ADB00981174 /* DisplayedImage.swift in Sources */,
+				4351D9572C8A2BCC00981174 /* CellDescriptionAndImage.swift in Sources */,
 				4351D9442C887A3000981174 /* ContentView.swift in Sources */,
 				4351D9552C89D06600981174 /* CellForHorizontalStack.swift in Sources */,
 				4351D9422C887A3000981174 /* CollectionViewsDifferentScrollingApp.swift in Sources */,
