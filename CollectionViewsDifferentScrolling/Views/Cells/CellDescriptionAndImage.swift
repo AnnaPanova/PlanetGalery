@@ -20,7 +20,7 @@ struct CellDescriptionAndImage: View {
             Text(imageForCell.description)
                 .frame(alignment: .center)
                 .font(.headline)
-                .padding()
+                .padding(.horizontal, 5)
         }
         .padding()
        

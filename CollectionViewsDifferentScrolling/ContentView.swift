@@ -23,12 +23,12 @@ struct ContentView: View {
             ScrollView(.horizontal) {
                 LazyHStack(spacing: 10.0){
                     ForEach(imagesForSV) { image in
-                        CellForHorizontalStack(imageForCell: image)
+                        CellWithSimpleImage(imageForCell: image)
                     }
                 }
             }
         .frame(height:200)
-        .padding()
+        .padding(.horizontal, 5)
             
             // 2 section: displayind in row with descriptions
             
@@ -37,15 +37,28 @@ struct ContentView: View {
                     ForEach(imagesForSV) { image in
                         CellDescriptionAndImage(imageForCell: image)
                     }
+            
                 }
             } header: {
                 Text("Planets with description")
                     .font(.title2)
                     .frame( maxWidth: .infinity, maxHeight: 10, alignment: .leading)
-                    .padding(5)
+                    .padding()
             }
 
             // 3 section: displays small pictures like a grid
+            
+            Section {
+                ScrollView {
+                   GridView()
+                }
+            } header: {
+                Text("Planets in grid")
+                    .font(.title2)
+                    .frame( maxWidth: .infinity, maxHeight: 10, alignment: .leading)
+                    .padding()
+            }
+
         Spacer()
                 .navigationTitle("Planets")
                 .navigationBarTitleDisplayMode(.inline)

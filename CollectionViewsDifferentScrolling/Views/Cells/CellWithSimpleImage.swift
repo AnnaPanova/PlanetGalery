@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CellForHorizontalStack: View {
+struct CellWithSimpleImage: View {
     let imageForCell : DisplayedImage
     
     var body: some View {
@@ -34,7 +34,7 @@ struct CellForHorizontalStack: View {
 
 struct CellForHorizontalStack_Previews: PreviewProvider {
     static var previews: some View {
-        CellForHorizontalStack(imageForCell: DisplayedImage(name: "Saturn", imageName: "saturn", description: ""))
+        CellWithSimpleImage(imageForCell: DisplayedImage(name: "Saturn", imageName: "saturn", description: ""))
     }
 }
 
