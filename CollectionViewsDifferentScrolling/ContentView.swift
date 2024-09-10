@@ -14,11 +14,12 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             // 1 section: displaying in line
-            
+            ScrollView {
             Text("Planets in line:")
-                .font(.title2)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                 .frame( maxWidth: .infinity, maxHeight: 10, alignment: .leading)
-                .padding(5)
+                .padding()
             
             ScrollView(.horizontal) {
                 LazyHStack(spacing: 10.0){
@@ -40,8 +41,9 @@ struct ContentView: View {
             
                 }
             } header: {
-                Text("Planets with description")
-                    .font(.title2)
+                Text("Planets description")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                     .frame( maxWidth: .infinity, maxHeight: 10, alignment: .leading)
                     .padding()
             }
@@ -54,7 +56,8 @@ struct ContentView: View {
                 }
             } header: {
                 Text("Planets in grid")
-                    .font(.title2)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                     .frame( maxWidth: .infinity, maxHeight: 10, alignment: .leading)
                     .padding()
             }
@@ -62,7 +65,7 @@ struct ContentView: View {
         Spacer()
                 .navigationTitle("Planets")
                 .navigationBarTitleDisplayMode(.inline)
-            
+            }
         }
            
     }
