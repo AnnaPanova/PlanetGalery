@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DisplayedImage: Identifiable {
+struct DisplayedImage: Identifiable, Equatable {
     
     let name: String
     let imageName : String
