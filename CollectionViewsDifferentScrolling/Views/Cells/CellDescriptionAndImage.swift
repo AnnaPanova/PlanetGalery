@@ -32,6 +32,6 @@ struct CellDescriptionAndImage: View {
 
 struct CellDescriptionAndImage_Previews: PreviewProvider {
     static var previews: some View {
-        CellDescriptionAndImage(imageForCell: DisplayedImage(name: "Mars", imageName: "mars", description: "Some scary description of Mars wit many-many letters......."))
+        CellDescriptionAndImage(imageForCell: DisplayedImage(name: "Mars", imageName: "mars", description: "Some scary description of Mars wit many-many letters.......", funFactTitle: "Title", funFact: "Fun fact"))
     }
 }

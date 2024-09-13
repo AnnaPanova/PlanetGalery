@@ -17,6 +17,7 @@
 		43E020102C8F117300167048 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E0200F2C8F117300167048 /* GridView.swift */; };
 		43E0202E2C9371F600167048 /* CellForZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E0202D2C9371F600167048 /* CellForZStack.swift */; };
 		43E020302C9430F800167048 /* ZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E0202F2C9430F800167048 /* ZStackView.swift */; };
+		43E020322C945C6000167048 /* FunFactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E020312C945C6000167048 /* FunFactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		43E0200F2C8F117300167048 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		43E0202D2C9371F600167048 /* CellForZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForZStack.swift; sourceTree = "<group>"; };
 		43E0202F2C9430F800167048 /* ZStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackView.swift; sourceTree = "<group>"; };
+		43E020312C945C6000167048 /* FunFactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				43E0200F2C8F117300167048 /* GridView.swift */,
 				43E0202D2C9371F600167048 /* CellForZStack.swift */,
 				43E0202F2C9430F800167048 /* ZStackView.swift */,
+				43E020312C945C6000167048 /* FunFactCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				43E0202E2C9371F600167048 /* CellForZStack.swift in Sources */,
 				4351D9552C89D06600981174 /* CellWithSimpleImage.swift in Sources */,
 				43E020102C8F117300167048 /* GridView.swift in Sources */,
+				43E020322C945C6000167048 /* FunFactCell.swift in Sources */,
 				43E020302C9430F800167048 /* ZStackView.swift in Sources */,
 				4351D9422C887A3000981174 /* CollectionViewsDifferentScrollingApp.swift in Sources */,
 			);

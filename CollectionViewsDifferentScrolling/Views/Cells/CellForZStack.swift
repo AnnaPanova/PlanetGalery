@@ -37,6 +37,6 @@ struct CellForZStack: View {
 
 struct CellForZStack_Previews: PreviewProvider {
     static var previews: some View {
-        CellForZStack(imageForCell: DisplayedImage(name: "Saturn", imageName: "saturn", description: ""))
+        CellForZStack(imageForCell: DisplayedImage(name: "Saturn", imageName: "saturn", description: "", funFactTitle: "Title", funFact: "Fun fact"))
     }
 }

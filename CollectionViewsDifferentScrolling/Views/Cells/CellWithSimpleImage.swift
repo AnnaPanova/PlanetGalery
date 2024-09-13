@@ -33,7 +33,7 @@ struct CellWithSimpleImage: View {
 
 struct CellForHorizontalStack_Previews: PreviewProvider {
     static var previews: some View {
-        CellWithSimpleImage(imageForCell: DisplayedImage(name: "Saturn", imageName: "saturn", description: ""))
+        CellWithSimpleImage(imageForCell: DisplayedImage(name: "Saturn", imageName: "saturn", description: "", funFactTitle: "Title", funFact: "Fun fact"))
     }
 }
 
