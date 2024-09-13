@@ -14,8 +14,13 @@ struct ContentView: View {
    
    
     private func indexForItem(array: [DisplayedImage]!, item: DisplayedImage) -> Int {
-        var indexForReturn = array.index(of:item)
+        var indexForReturn = array.firstIndex(of:item)
         return indexForReturn!
+    }
+    
+    private func amountOfImages(array: [DisplayedImage]!) -> Int {
+        let amount = array.count
+        return amount
     }
     
     var body: some View {
@@ -30,6 +35,7 @@ struct ContentView: View {
                                 .padding(CGFloat(80+80*indexForItem(array: imagesForSV, item: image)))
                         }
                     }
+                    .frame( maxHeight: CGFloat(300+(80*amountOfImages(array: imagesForSV))), alignment: .top )
                 }
                 
                     } header: {
@@ -41,7 +47,9 @@ struct ContentView: View {
                     }
             
             // 1 section: displaying in line
-            ScrollView {
+        ScrollView {
+
+            
             Text("Planets in line:")
                     .font(.largeTitle)
                     .fontWeight(.bold)
