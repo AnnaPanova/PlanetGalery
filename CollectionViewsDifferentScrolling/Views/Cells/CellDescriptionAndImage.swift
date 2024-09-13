@@ -9,20 +9,22 @@ import SwiftUI
 
 struct CellDescriptionAndImage: View {
     let imageForCell : DisplayedImage
+    
     var body: some View {
         HStack {
             Image(imageForCell.imageName)
                 .resizable()
                 .cornerRadius(15)
                 .scaledToFit()
-                .frame( maxWidth: 350,  maxHeight: 350, alignment: .leading)
+                
                 .shadow(radius: 10)
             Text(imageForCell.description)
                 .frame(alignment: .center)
                 .font(.headline)
                 .padding(.horizontal, 5)
         }
-        .padding()
+        .frame( maxWidth: 350,  maxHeight: 350, alignment: .leading)
+        .padding(8)
        
     }
 

@@ -9,15 +9,19 @@ import SwiftUI
 
 struct GridView: View {
     let imageForGrid = DisplayedImage.createArrayOfImages()
+    
     private let columns = [GridItem(.adaptive(minimum: 150), spacing: 15, alignment: .center)]
     
     var body: some View {
-        LazyVGrid(columns: columns) {
-            ForEach(imageForGrid) { image in
-              CellWithSimpleImage(imageForCell: image)
+        ScrollView() {
+            LazyVGrid(columns: columns) {
+                ForEach(imageForGrid) { image in
+                    CellWithSimpleImage(imageForCell: image)
+                }
             }
+            .frame(width: 350 , height: .infinity)
+            .padding()
         }
-        .padding()
     }
 }
 

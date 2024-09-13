@@ -20,6 +20,7 @@ struct CellForZStack: View {
                 .scaledToFit()
               
             
+          // overlay to adding name of the planet
                 .overlay(alignment: .topLeading, content:{
                     Text(imageForCell.name)
                         .foregroundColor(.white)

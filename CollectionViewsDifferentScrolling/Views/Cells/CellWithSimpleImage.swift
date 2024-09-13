@@ -16,18 +16,17 @@ struct CellWithSimpleImage: View {
             .cornerRadius(25.0)
             .shadow(radius: 10.0)
             .scaledToFit()
+            .padding(5)
           
-        
+        // overlay to adding name of the planet
             .overlay(alignment: .bottomTrailing, content:{
                 Text(imageForCell.name)
                     .foregroundColor(.white)
                     .font(.title2)
                     .fontWeight(.bold)
                     .padding()
-
             }
         )
-        
     }
 }
 
