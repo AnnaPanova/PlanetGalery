@@ -15,6 +15,7 @@ struct FunFactCell: View {
         VStack(alignment: .center) {
             Text("Fun fact about \(imageForCell.name)")
                 .font(.system(size: 36))
+                .multilineTextAlignment(.center)
                 .fontWeight(.bold)
             Image(imageForCell.imageName)
                 .resizable()
@@ -25,9 +26,13 @@ struct FunFactCell: View {
             Text("\(imageForCell.funFactTitle)")
                 .fontWeight(.bold)
                 .font(.system(size: 26))
+                .multilineTextAlignment(.center)
                 .padding()
             Text("\(imageForCell.funFact)")
                 .font(.system(size: 20))
+                .multilineTextAlignment(.center)
+                .padding()
+               
         }
         Spacer()
     }
@@ -35,6 +40,6 @@ struct FunFactCell: View {
 
 struct FunFactCell_Previews: PreviewProvider {
     static var previews: some View {
-        FunFactCell(imageForCell: DisplayedImage(name: "Mars", imageName: "mars", description: "Some scary description of Mars wit many-many letters.......", funFactTitle: "Title", funFact: "Fun fact bla bla bla bla"))
+        FunFactCell(imageForCell: DisplayedImage(name: "Mars", imageName: "mars", description: "Some scary description of Mars wit many-many letters.......", funFactTitle: "Very long multiline Title that discribes fun fact ", funFact: "Fun fact bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"))
     }
 }

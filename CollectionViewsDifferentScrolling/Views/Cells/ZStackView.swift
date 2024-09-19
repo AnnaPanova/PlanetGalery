@@ -25,8 +25,10 @@ struct ZStackView: View {
     var body: some View {
         ZStack(alignment: .top) {
             ForEach(imagesForSV) { image in
-                CellForZStack(imageForCell: image)
-                
+                NavigationLink(destination: FunFactCell(imageForCell: image)) {
+                    CellForZStack(imageForCell: image)
+                }
+
                 // calculation of padding that helps makes all images visible in stack
                     .padding(CGFloat(80+80*indexForItem(array: imagesForSV, item: image)))
             }

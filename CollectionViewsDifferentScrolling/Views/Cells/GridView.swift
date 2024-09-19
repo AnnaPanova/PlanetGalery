@@ -16,7 +16,8 @@ struct GridView: View {
         ScrollView() {
             LazyVGrid(columns: columns) {
                 ForEach(imageForGrid) { image in
-                    CellWithSimpleImage(imageForCell: image)
+                    NavigationLink (destination: FunFactCell(imageForCell: image)) {
+                        CellWithSimpleImage(imageForCell: image) }
                 }
             }
             .frame(width: 350 , height: .infinity)

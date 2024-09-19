@@ -21,7 +21,8 @@ struct ContentView: View {
                     ScrollView(.horizontal) {
                         LazyHStack(spacing: 0.5){
                             ForEach(imagesForSV) { image in
-                                CellWithSimpleImage(imageForCell: image)
+                                NavigationLink(destination: FunFactCell(imageForCell: image)){ CellWithSimpleImage(imageForCell: image)
+                                }
                             }
                         }
                         .padding(.horizontal, 8)
@@ -41,7 +42,9 @@ struct ContentView: View {
                 Section {
                     ScrollView {
                         ForEach(imagesForSV) { image in
-                            CellDescriptionAndImage(imageForCell: image)
+                            NavigationLink (destination: FunFactCell(imageForCell: image)) {
+                                CellDescriptionAndImage(imageForCell: image)
+                            }
                         }
                     }
                 } header: {
