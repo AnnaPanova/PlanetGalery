@@ -21,6 +21,7 @@ struct CellDescriptionAndImage: View {
             Text(imageForCell.description)
                 .frame(alignment: .center)
                 .font(.headline)
+                .foregroundColor(.black)
                 .padding(.horizontal, 5)
         }
         .frame( maxWidth: 350,  maxHeight: 350, alignment: .leading)

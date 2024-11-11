@@ -28,11 +28,14 @@ struct FunFactCell: View {
                 .font(.system(size: 26))
                 .multilineTextAlignment(.center)
                 .padding()
-            Text("\(imageForCell.funFact)")
-                .font(.system(size: 20))
-                .multilineTextAlignment(.center)
-                .padding()
-               
+            ScrollView{
+                Text("\(imageForCell.funFact)")
+                    .font(.system(size: 20))
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(nil)
+                    .padding()
+            }
+            
         }
         Spacer()
     }
@@ -40,6 +43,6 @@ struct FunFactCell: View {
 
 struct FunFactCell_Previews: PreviewProvider {
     static var previews: some View {
-        FunFactCell(imageForCell: DisplayedImage(name: "Mars", imageName: "mars", description: "Some scary description of Mars wit many-many letters.......", funFactTitle: "Very long multiline Title that discribes fun fact ", funFact: "Fun fact bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla"))
+        FunFactCell(imageForCell: DisplayedImage(name: "Mars", imageName: "mars", description: "Some scary description of Mars wit many-many letters.......", funFactTitle: "Very long multiline Title that discribes fun fact ", funFact: "Fun fact bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla la bla bla bla bla bla bla bla la bla bla bla bla bla bla bla la bla bla bla bla bla bla bla la bla bla bla bla bla bla blala bla bla bla bla bla bla blala bla bla bla bla bla bla bla. This is the end of a long story."))
     }
 }
